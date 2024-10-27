@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Resolver Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d3d3d3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        section {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 0;
+            font-size: 2em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .button {
+            background: #28a745;
+            color: #ffffff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s, transform 0.3s;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+        }
+
+        .button:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1c1c1c;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .product-image {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #007bff;
+            transition: transform 0.3s;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CS:GO Resolver Store</h1>
+    <nav>
+        <a href="#fatility">Fatility Resolver</a>
+        <a href="#gamesense">Gamesense Resolver</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="fatility">
+        <h2>Fatility CS:GO Resolver</h2>
+        <img src="Screenshot 2024-10-27 183301.png" alt="Fatility Resolver" class="product-image">
+        <p>Enhance your CS:GO gameplay with the Fatility resolver. Our state-of-the-art technology ensures that your shots hit where they should, making you a formidable opponent.</p>
+        <h3>Features:</h3>
+        <ul>
+            <li>Accurate hit registration</li>
+            <li>Easy integration with popular cheats</li>
+            <li>Regular updates to stay ahead of the game</li>
+            <li>24/7 customer support</li>
+        </ul>
+        <p>Price: <strong>$3.00</strong></p>
+        <button class="button" onclick="processPurchase('Fatility CS:GO Resolver')">Purchase Fatility Resolver</button>
+    </section>
+
+    <section id="gamesense">
+        <h2>Gamesense CS:GO Resolver</h2>
+        <img src="Screenshot 2024-10-27 183433.png" alt="Gamesense Resolver" class="product-image">
+        <p>Take your gameplay to the next level with the Gamesense resolver. With our advanced algorithms, you'll never miss a shot again!</p>
+        <h3>Features:</h3>
+        <ul>
+            <li>Incredible performance boost</li>
+            <li>Seamless compatibility with multiple game versions</li>
+            <li>Frequent updates for improved functionality</li>
+            <li>Expert technical support available</li>
+        </ul>
+        <p>Price: <strong>$3.00</strong></p>
+        <button class="button" onclick="processPurchase('Gamesense CS:GO Resolver')">Purchase Gamesense Resolver</button>
+    </section>
+</div>
+
+<!-- Modal -->
+<div id="orderModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Order Confirmation</h2>
+        <p id="orderMessage"></p>
+        <p>Please DM <strong>@37vm</strong> on Discord with your name and Stripe payment details.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 CS:GO Resolver Store. All rights reserved.</p>
+    <p><a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+</footer>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, please reach out to us at <strong>support@csgoresolverstore.com</strong></p>
+</section>
+
+<script>
+    function processPurchase(productName) {
+        // Redirect to the Stripe payment link
+        let stripePaymentUrl = '';
+        if (productName === 'Fatility CS:GO Resolver') {
+            stripePaymentUrl = 'https://buy.stripe.com/test_8wM8AjeKSen9gBWcMM'; // Fatility link
+        } else if (productName === 'Gamesense CS:GO Resolver') {
+            stripePaymentUrl = 'https://buy.stripe.com/test_8wM8AjeKSen9gBWcMM'; // Replace with actual Gamesense link
+        }
+
+        // Open the Stripe payment link in a new tab/window
+        window.open(stripePaymentUrl, '_blank');
+
+        // Inform the user to check their email for payment confirmation
+        document.getElementById('orderMessage').innerText = `You will receive a confirmation email once your payment is successful.`;
+        document.getElementById('orderModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById("orderModal").style.display = "none";
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById("orderModal");
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
